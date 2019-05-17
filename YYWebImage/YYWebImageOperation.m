@@ -677,12 +677,12 @@ static void URLInBlackListAdd(NSURL *url) {
                     case YYImageTypeGIF:
                     case YYImageTypePNG:
                     case YYImageTypeWebP: { // save to disk cache
-                        if (!hasAnimation) {
-                            if (imageType == YYImageTypeGIF ||
-                                imageType == YYImageTypeWebP) {
-                                self.data = nil; // clear the data, re-encode for disk cache
-                            }
-                        }
+//                        if (!hasAnimation) {
+//                            if (imageType == YYImageTypeGIF ||
+//                                imageType == YYImageTypeWebP) {
+//                                self.data = nil; // clear the data, re-encode for disk cache
+//                            }
+//                        }
                     } break;
                     default: {
                         self.data = nil; // clear the data, re-encode for disk cache
